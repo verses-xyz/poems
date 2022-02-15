@@ -4,7 +4,7 @@
     href="https://unpkg.com/telescopic-text/lib/index.css"
     rel="stylesheet"
   />
-  <title>the world is a sacred object</title>
+  <title>verses poems</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -13,12 +13,12 @@
   />
 </head>
 <body>
+  <div id="versesLogo">
+    <a href="https://verses.xyz">
+      <img id="versesLogoImg" src="./verses-logo.svg" />
+    </a>
+  </div>
   <div id="text-container">
-    <ul id="">
-      <li>kelsey chen</li>
-      <li>spencer chang</li>
-      <li>...</li>
-    </ul>
     <h2>the world is a sacred object</h2>
     <div id="text-container-inner"></div>
     <h2>peach pits</h2>
@@ -27,6 +27,14 @@
     <h2>boundless shapeshifters</h2>
     <div id="text-container-inner-3"></div>
     <p class="signoff">- spencer chang</p>
+
+    <hr />
+    <h3>authors</h3>
+    <ul id="">
+      <li>kelsey chen</li>
+      <li>spencer chang</li>
+      <li>...</li>
+    </ul>
   </div>
 
   <script>
@@ -178,17 +186,17 @@
 <style>
   body {
     background: #ede8e4;
+    margin: 6vh 35vw;
   }
 
   #text-container {
     color: #141312;
-    margin: 10vh 35vw;
     font-size: 1.3rem;
     line-height: 2.5rem;
     font-family: "Libre Baskerville", serif;
   }
 
-  img {
+  /* img {
     width: 100%;
     border-radius: 2px;
     border: 2px solid #1c1716;
@@ -204,17 +212,17 @@
     text-align: right;
     font-style: italic;
     opacity: 0.6;
-  }
+  } */
 
   @media only screen and (max-width: 1600px) {
-    #text-container {
-      margin: 10vh 15vw;
+    body {
+      margin: 6vh 15vw;
     }
   }
 
   @media only screen and (max-width: 800px) {
-    #text-container {
-      margin: 10vh 5vw;
+    body {
+      margin: 6vh 5vw;
     }
   }
 
@@ -228,5 +236,28 @@
 
   .signoff {
     font-size: 1rem;
+  }
+
+  #versesLogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
+  #versesLogoImg {
+    width: 140px;
+    height: 140px;
+  }
+
+  hr {
+    border: none;
+  }
+
+  hr::before {
+    content: "* * * * *";
+    display: block;
+    text-align: center;
   }
 </style>
