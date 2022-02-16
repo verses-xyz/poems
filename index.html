@@ -4,7 +4,11 @@
     href="https://unpkg.com/telescopic-text/lib/index.css"
     rel="stylesheet"
   />
-  <title>verses poems</title>
+  <title>verses verses</title>
+  <meta
+    name="description"
+    content="A collection of verses from the verses community."
+  />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -38,6 +42,7 @@
     <a href="https://verses.xyz">
       <img id="versesLogoImg" src="./verses-logo.svg" />
     </a>
+    <h1 style="margin-top: 0.25rem">verses</h1>
   </div>
   <div id="text-container">
     <h2>the world is a sacred object</h2>
@@ -264,7 +269,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 4rem;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
   }
 
   #versesLogoImg {
@@ -277,7 +287,8 @@
   }
 
   hr::before {
-    content: "* * * * *";
+    /* content: "* * * * *"; */
+    content: "◉ ◉ ◉ ◉ ◉ ◉";
     display: block;
     text-align: center;
   }
