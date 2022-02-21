@@ -1,0 +1,177 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/telescopic-text/lib/index.js"></script>
+    <link
+      href="https://unpkg.com/telescopic-text/lib/index.css"
+      rel="stylesheet"
+    />
+    <title>verses verses</title>
+    <meta
+      name="description"
+      content="A collection of verses from the verses community."
+    />
+    <meta property="og:image" content="/assets/android-chrome-512x512.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/assets/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <div id="versesLogo">
+      <a href="https://verses.xyz">
+        <img id="versesLogoImg" src="./verses-logo.svg" />
+      </a>
+      <h1 style="margin-top: 0.25rem">telescopic verses test bed</h1>
+    </div>
+    <div id="text-container">
+      <p>
+        To test out how your poem will look and behave, enter your poem here in
+        bullet list format:
+      </p>
+      <!-- TODO: add color -->
+      <!-- TODO: add title -->
+      <textarea id="testInput" onchange="onUpdateTelescopicText"></textarea>
+
+      <p>The output will live update below:</p>
+      <h2>Test Poem:</h2>
+      <div id="text-container-inner"></div>
+    </div>
+
+    <script>
+      function onUpdateTelescopicText() {
+        const input = document.getElementById("testInput").value;
+        const node = createTelescopicTextFromBulletedList(input);
+        const container = document.getElementById("text-container-inner");
+        container.replaceChildren(node);
+      }
+
+      document
+        .getElementById("testInput")
+        .setAttribute("onchange", "onUpdateTelescopicText()");
+    </script>
+  </body>
+  <style>
+    body {
+      background: #ede8e4;
+      margin: 6vh 15vw;
+      font-family: "Libre Baskerville", serif;
+      max-width: 2400px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #text-container {
+      color: #141312;
+      font-size: 1.3rem;
+      line-height: 2.5rem;
+    }
+
+    /* img {
+    width: 100%;
+    border-radius: 2px;
+    border: 2px solid #1c1716;
+    box-shadow: 5px 5px 41px 11px rgba(0, 0, 0, 0.4);
+  }
+
+  figure {
+    margin: 0 0 3vh;
+  }
+
+  figure > figcaption {
+    font-size: 1rem;
+    text-align: right;
+    font-style: italic;
+    opacity: 0.6;
+  } */
+
+    @media only screen and (max-width: 800px) {
+      body {
+        margin: 6vh 5vw;
+      }
+
+      #testInput {
+        height: 10rem;
+      }
+    }
+
+    #telescope .details {
+      background-color: #f3c68779;
+    }
+
+    #telescope .details.close:hover {
+      background-color: #e3a54e72;
+    }
+
+    .signoff {
+      font-size: 1rem;
+    }
+
+    #testInput {
+      width: 100%;
+      max-width: 800px;
+      height: 20rem;
+      font-family: "PT Mono", monospace;
+    }
+
+    #versesLogo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    #versesLogoImg {
+      width: 140px;
+      height: 140px;
+    }
+
+    hr {
+      border: none;
+    }
+
+    hr::before {
+      /* content: "* * * * *"; */
+      content: "◉ ◉ ◉ ◉ ◉ ◉";
+      display: block;
+      text-align: center;
+    }
+  </style>
+</html>
