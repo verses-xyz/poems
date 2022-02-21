@@ -55,37 +55,39 @@
       <h1 style="margin-top: 0.25rem">telescopic verses test bed</h1>
     </div>
     <div id="text-container">
-      <p>
-        You can write telescopic text using your favorite note app / text editor
-        and a bullet list! Start with a single sentence like:
-        <br/>
-        <pre>* Texts are boundless shapeshifters</pre>
-      </p>
-      <p>At any point, you can break up the full sentence into separate lines. Bullets on the same indentation level are combined
-        into the same sentence, and any indented bullets will be used as an
-        expansion point for the parent bullet. At any point, you can break up
-        the full sentence into separate lines. Bullets at the same indentation
-        level. For example,<br/>
-        <pre>
-* Texts
-  * Clear notes
-      * really clear notes
-  * and 
-* are boundless shapeshifters.
-  * are limitless shapeshifters.</pre>
-        would become the following:
+      <details>
+        <summary>
+          <h3 style="display: inline">How do I use this?</h3>
+        </summary>
+        <p>
+          You can write telescopic text using your favorite note app / text editor
+          and a bullet list! Start with a single sentence like:
+          <br/>
+          <pre>- Texts are boundless shapeshifters</pre>
+        </p>
+        <p>At any point, you can break up the full sentence into separate lines. Bullets on the same indentation level are combined
+          into the same sentence, and any indented bullets will be used as an
+          expansion point for the parent bullet. At any point, you can break up
+          the full sentence into separate lines. Bullets at the same indentation
+          level. For example,<br/>
+          <pre>
+  - Texts
+    - Clear notes
+        - really clear notes
+    - and 
+  - are boundless shapeshifters.
+    - are limitless shapeshifters.</pre>
+          would become the following:
+        </p>
         <div id="example-poem"></div>
-      </p>
+        <hr/>
+      </details>
       <p>
-        To test out how a telescopic poem might look and behave, enter your poem
-        here in bullet list format:
+        To play with how a telescopic poem might look and behave, enter your text below, and the ouput will auto-update on top.
       </p>
       <!-- TODO: add color -->
       <!-- TODO: add title -->
-      <textarea id="testInput"></textarea>
-
-      <p>The output will live update below:</p>
-      <h2>Test Poem:</h2>
+      <textarea id="testInput" placeholder="- your&#10;- beautiful poem&#10;  -  very beautiful poem"></textarea>
       <div id="text-container-inner"></div>
     </div>
 
