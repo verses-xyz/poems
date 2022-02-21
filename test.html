@@ -56,8 +56,29 @@
     </div>
     <div id="text-container">
       <p>
-        To test out how your poem will look and behave, enter your poem here in
-        bullet list format:
+        You can write telescopic text using your favorite note app / text editor
+        and a bullet list! Start with a single sentence like:
+        <br/>
+        <pre>* Texts are boundless shapeshifters</pre>
+      </p>
+      <p>At any point, you can break up the full sentence into separate lines. Bullets on the same indentation level are combined
+        into the same sentence, and any indented bullets will be used as an
+        expansion point for the parent bullet. At any point, you can break up
+        the full sentence into separate lines. Bullets at the same indentation
+        level. For example,<br/>
+        <pre>
+* Texts
+  * Clear notes
+      * really clear notes
+  * and 
+* are boundless shapeshifters.
+  * are limitless shapeshifters.</pre>
+        would become the following:
+        <div id="example-poem"></div>
+      </p>
+      <p>
+        To test out how a telescopic poem might look and behave, enter your poem
+        here in bullet list format:
       </p>
       <!-- TODO: add color -->
       <!-- TODO: add title -->
@@ -69,6 +90,13 @@
     </div>
 
     <script>
+      const testNode = createTelescopicTextFromBulletedList(`* Texts
+  * Clear notes
+      * really clear notes
+  * and sounds 
+* are boundless shapeshifters.
+  * are limitless shapeshifters.`);
+      document.getElementById("example-poem").appendChild(testNode);
       function onUpdateTelescopicText() {
         const input = document.getElementById("testInput").value;
         const node = createTelescopicTextFromBulletedList(input);
@@ -132,6 +160,12 @@
 
     #telescope .details.close:hover {
       background-color: #e3a54e72;
+    }
+
+    pre {
+      background: #dfe6ed;
+      padding: .25rem .75rem;
+      border-radius: 4px;
     }
 
     .signoff {
