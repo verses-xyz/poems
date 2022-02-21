@@ -61,7 +61,7 @@
       </p>
       <!-- TODO: add color -->
       <!-- TODO: add title -->
-      <textarea id="testInput" onchange="onUpdateTelescopicText"></textarea>
+      <textarea id="testInput"></textarea>
 
       <p>The output will live update below:</p>
       <h2>Test Poem:</h2>
@@ -78,7 +78,7 @@
 
       document
         .getElementById("testInput")
-        .setAttribute("onchange", "onUpdateTelescopicText()");
+        .setAttribute("oninput", "onUpdateTelescopicText()");
     </script>
   </body>
   <style>
