@@ -45,9 +45,7 @@
   </div>
   <div id="text-container">
     <p>A collection of telescopic verses from the verses community.</p>
-    <div id="poems">
-
-    </div>
+    <div id="poems"></div>
     <hr />
     <h3 style="margin-bottom: 0">Want your own?</h3>
     <p style="margin-top: 0.2rem">
@@ -57,11 +55,11 @@
   </div>
 
   <script>
-  const poems = [
-    {
-      title: "the world is a sacret object",
-      author: "kelsey chen",
-      content: `
+    const poems = [
+      {
+        title: "the world is a sacret object",
+        author: "kelsey chen",
+        content: `
 - the world
     - all of it
         - all that
@@ -96,12 +94,12 @@
                                                             - to try and keep it
                                                                 - to try to grasp it
                                                     - is to lose it.
-                                                        - is to lose yourself.`
-    },
-    {
-      title: "peach pits",
-      author: "kelsey chen",
-      content: `
+                                                        - is to lose yourself.`,
+      },
+      {
+        title: "peach pits",
+        author: "kelsey chen",
+        content: `
 - There is
 - a peach tree
 - outside
@@ -170,11 +168,11 @@
         - two peach pits--tiny spiked hearts in the cold--
 - rolling.
     - rolling across that runway.`,
-    },
-    {
-      title: "boundless shapeshifters",
-      author: "spencer chang",
-      content: `
+      },
+      {
+        title: "boundless shapeshifters",
+        author: "spencer chang",
+        content: `
 * Texts
     * Melodies
         * clear notes
@@ -202,11 +200,11 @@
 * holders of space
     * holders of space and keepers of time
         * holders of space and keepers of time and protectors of life`,
-    },
-    {
-      title: "knowing",
-      author: "jacky zhao",
-      content: `- They
+      },
+      {
+        title: "knowing",
+        author: "jacky zhao",
+        content: `- They
 \t- The man at the bookstore
 \t\t- I went to the
 \t\t- bookstore
@@ -308,23 +306,23 @@
 \t\t\t\t\t\t- As Saint-Exupéry said...
 \t\t\t\t\t\t\t- @Q “What makes the desert beautiful,' said the little prince, 'is that somewhere it hides a well...”
 \t- It was a sunny day after all.`,
-    }
-  ]
+      },
+    ];
   </script>
   <script>
-    const poemContainer = document.getElementById("poems")
-    poems.forEach(poem => {
-      const poemDiv = document.createElement("div")
-      const header = document.createElement("h2")
-      header.innerText = poem.title
-      poemDiv.appendChild(header)
+    const poemContainer = document.getElementById("poems");
+    poems.forEach((poem) => {
+      const poemDiv = document.createElement("div");
+      const header = document.createElement("h2");
+      header.innerText = poem.title;
+      poemDiv.appendChild(header);
       const poemContent = createTelescopicTextFromBulletedList(poem.content);
-      poemDiv.appendChild(poemContent)
-      const signoff = document.createElement("p")
-      signoff.innerHTML = `&mdash; ${poem.author}`
-      poemDiv.appendChild(signoff)
-      poemContainer.appendChild(poemDiv)
-    })
+      poemDiv.appendChild(poemContent);
+      const signoff = document.createElement("p");
+      signoff.innerHTML = `&mdash; ${poem.author}`;
+      poemDiv.appendChild(signoff);
+      poemContainer.appendChild(poemDiv);
+    });
   </script>
 </body>
 <style>
@@ -401,9 +399,13 @@
   }
 
   hr {
-    border: 1px solid #000;
-    width: 50%;
+    border: none;
+  }
+
+  hr::before {
+    /* content: "* * * * *"; */
+    content: "◉ ◉ ◉ ◉ ◉ ◉";
+    display: block;
     text-align: center;
-    margin: 4em auto;
   }
 </style>
