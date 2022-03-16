@@ -70,12 +70,20 @@ body {
   #sidebar {
     position: relative;
     width: 100%;
-    padding: 0 2em;
+    padding: 4em 2em 0;
     box-sizing: border-box;
+    height: auto;
   }
 
   #sidebar:after {
     display: none;
+  }
+
+  #text-container.test {
+    width: 100%;
+    margin: 0;
+    padding: 0 2em 4em;
+    box-sizing: border-box;
   }
 
   .poem.poem {
