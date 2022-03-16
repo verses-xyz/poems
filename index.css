@@ -1,0 +1,124 @@
+html {
+  background-color: rgb(237, 232, 228);
+}
+
+.noise-gradient {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  pointer-events: none;
+  background: url(https://grainy-gradients.vercel.app/noise.svg);
+  opacity: 0.3;
+}
+
+body {
+  font-family: "Libre Baskerville", serif;
+  margin: 0;
+  background: 
+	linear-gradient(180deg, rgba(250,250,251,1), rgba(237,232,228,1));
+}
+
+#text-container {
+  color: #141312;
+  margin-left: 35vw;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+
+}
+
+#telescope#telescope hr.spacer {
+  border: none;
+}
+
+#telescope .break {
+  display: block !important;
+  margin: 1em 0;
+}
+
+#telescope .details {
+  background-color: #f3c68779;
+}
+
+#telescope .details.close:hover {
+  background-color: #e3a54e72;
+}
+
+.signoff {
+  font-size: 1rem;
+}
+
+#sidebar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3em 0 7em;
+  width: 15vw;
+  height: 100vh;
+}
+
+#sidebar > p > a, #sidebar > p {
+  opacity: 0.6;
+  color: #15120C;
+}
+
+#sidebar > ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 2em 0;
+  cursor: pointer;
+}
+
+#sidebar > ul > li {
+  margin: 0;
+}
+
+#sidebar li > h3, #sidebar li > p {
+  margin: 0.3em 0;
+}
+
+#sidebar:after {
+  content: '';
+  width: 2px;
+  height: 70vh;
+  background: #15120C;
+  right: 0;
+  top: 15vh;
+  position: absolute;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+#versesLogoImg {
+  width: 70px;
+  height: 70px;
+  opacity: 1;
+}
+
+.poem-entry {
+  opacity: 0.6;
+  transition: opacity ease 1s, background-color ease 1s;
+  padding: 1em;
+}
+
+.poem-entry.active, .poem-entry:hover {
+  opacity: 1;
+  background-color: #e8e6e1;
+}
+
+.poem {
+  padding: 30vh 0;
+  width: 40vw;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.poem.active {
+  visibility: visible;
+  opacity: 1;
+}
