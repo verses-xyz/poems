@@ -20,11 +20,19 @@ body {
 }
 
 #text-container {
-  color: #141312;
   margin-left: 35vw;
+}
+
+#text-container, #telescope {
+  color: #141312;
   font-size: 1.3rem;
   line-height: 2.5rem;
+}
 
+#text-container.test {
+  padding-top: 10vh;
+  width: 40vw;
+  font-size: 1rem;
 }
 
 #telescope#telescope hr.spacer {
@@ -58,7 +66,7 @@ body {
   height: 100vh;
 }
 
-#sidebar > p > a, #sidebar > p {
+#sidebar > p > a, #sidebar > p, .test a {
   opacity: 0.6;
   color: #15120C;
 }
@@ -121,4 +129,38 @@ h1 {
 .poem.active {
   visibility: visible;
   opacity: 1;
+}
+
+.code-preview pre > code {
+  font-size: 16px;
+}
+
+pre {
+  background: #dfe6ed;
+  padding: .25rem .75rem;
+  border-radius: 4px;
+}
+
+#testInput {
+  width: 100%;
+  max-width: 800px;
+  height: 20rem;
+  font-family: "PT Mono", monospace;
+  resize: none;
+  border: 2px solid #00000055;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+#playground {
+  display: flex;
+  gap: 2em;
+}
+
+#playground > * {
+  flex: 0 0 50%;
+}
+
+#playground h2 {
+  margin: 0;
 }

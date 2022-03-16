@@ -39,23 +39,45 @@
       href="/assets/favicon-16x16.png"
     />
     <link rel="manifest" href="/assets/site.webmanifest" />
-    <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
     <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/themes/prism.min.css"
 />
+    <link rel="stylesheet" type="text/css" href="./index.css"  />
   </head>
   <body>
-    <div id="versesLogo">
-      <h1 style="margin-top: 0.25rem">telescopic verses interactive playground</h1>
+  <div class="noise-gradient"></div>
+  <div class="two-pane">
+    <div id="sidebar">
+      <a href="https://verses.xyz">
+        <img id="versesLogoImg" src="./logo.png" />
+      </a>
+      <h1>verses</h1>
+      <p>A collection of telescopic verses from the <a href="https://verses.xyz/">verses</a> community.</p>
+      <ul id="poem-list">
+      </ul>
+      <p><a href="/">Back to collection.</a></p>
     </div>
-    <div id="text-container">
+    <div id="text-container" class="test">
+      <h1>Interactive Playground</h1>
       <p>This is an interactive site to play with making telescopic text using the <a href="github.com/jackyzha0/telescopic-text">telescopic-text library</a> maintained by jacky, spencer, and other open-source contributors.</p>
+      <p>
+        To play with how a telescopic poem might look and behave, enter your text below, and the output will auto-update on top.
+      </p>
+      <div id="playground">
+        <textarea id="testInput" placeholder="- your&#10;- beautiful poem&#10;  -  very beautiful poem"></textarea>
+        <div>
+          <h2>Your Poem</h2>
+            <div id="text-container-inner"></div>
+        </div>
+      </div>
+
+      <br/>
       <details>
         <summary>
-          <h3 style="display: inline">How do I use this?</h3>
+          <b>How do I use this?</b>
         </summary>
         <p>
           You can write telescopic text using your favorite note app / text editor
@@ -80,15 +102,6 @@
         <div id="example-poem"></div>
         <hr/>
       </details>
-      <p>
-        To play with how a telescopic poem might look and behave, enter your text below, and the ouput will auto-update on top.
-      </p>
-      <!-- TODO: add color -->
-      <!-- TODO: add title -->
-      <textarea id="testInput" placeholder="- your&#10;- beautiful poem&#10;  -  very beautiful poem"></textarea>
-      <div id="text-container-inner"></div>
-
-      <br/>
       <details class="code-preview"><summary><b>Corresponding code</b></summary>
         <p>The following code will render the above telescopic text if put in an HTML file.</p>
         <div id="copy-code-container">
@@ -104,12 +117,6 @@
 &lt;/head&gt;</code>
         </pre>
       </details>
-    </div>
-    <div style="margin-top:6rem; flex-direction: column; display:flex; align-items: center;">
-      <em style="margin-bottom:0.5rem;">from verses</em>
-      <a href="https://verses.xyz">
-        <img id="versesLogoImg" src="./logo.png" />
-      </a>
     </div>
 
     <script>
@@ -146,108 +153,6 @@
         .setAttribute("oninput", "onUpdateTelescopicText()");
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/prism.min.js"></script>
-  </body>
-  <style>
-    body {
-      background: #ede8e4;
-      margin: 6vh 15vw;
-      font-family: "Libre Baskerville", serif;
-      max-width: 2400px;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    #text-container {
-      color: #141312;
-      font-size: 1.3rem;
-      line-height: 2.5rem;
-    }
-
-    .code-preview pre > code {
-      font-size: 16px;
-    }
-
-    /* img {
-    width: 100%;
-    border-radius: 2px;
-    border: 2px solid #1c1716;
-    box-shadow: 5px 5px 41px 11px rgba(0, 0, 0, 0.4);
-  }
-
-  figure {
-    margin: 0 0 3vh;
-  }
-
-  figure > figcaption {
-    font-size: 1rem;
-    text-align: right;
-    font-style: italic;
-    opacity: 0.6;
-  } */
-
-    @media only screen and (max-width: 800px) {
-      body {
-        margin: 6vh 5vw;
-      }
-
-      #testInput {
-        height: 10rem;
-      }
-    }
-
-    #telescope .details {
-      background-color: #f3c68779;
-    }
-
-    #telescope .details.close:hover {
-      background-color: #e3a54e72;
-    }
-
-    pre {
-      background: #dfe6ed;
-      padding: .25rem .75rem;
-      border-radius: 4px;
-    }
-
-    .signoff {
-      font-size: 1rem;
-    }
-
-    #testInput {
-      width: 100%;
-      max-width: 800px;
-      height: 20rem;
-      font-family: "PT Mono", monospace;
-    }
-
-    #versesLogo {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      margin-bottom: 2rem;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-    }
-
-    #versesLogoImg {
-      width: 64px;
-      height: 64px;
-    }
-
-    hr {
-      border: none;
-    }
-
-    hr::before {
-      /* content: "* * * * *"; */
-      content: "◉ ◉ ◉ ◉ ◉ ◉";
-      display: block;
-      text-align: center;
-    }
-  </style>
+  </div>
+ </body>
 </html>
