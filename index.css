@@ -7,9 +7,10 @@ html {
   top: 0;
   left: 0;
   width: 100vw;
+  height: 100vh;
   pointer-events: none;
   background: url(https://grainy-gradients.vercel.app/noise.svg);
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 body {
