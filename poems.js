@@ -317,4 +317,17 @@ const poems = [
     - real.
       - free.`,
   },
+  {
+    title: "grasp",
+    author: "jw",
+    content: `- to 
+- be a subject
+  - be a patient
+     - objectify
+       - ledgerize
+         - grasp
+           - grasp is the precondition for 
+           - abstraction
+             - erasure`,
+  },
 ];
