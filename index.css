@@ -133,10 +133,14 @@ h1 {
   opacity: 1;
 }
 
+ul#poem-list {
+  margin: 0;
+}
+
 .poem-entry {
   opacity: 0.6;
   transition: opacity ease 1s, background-color ease 1s;
-  padding: 1em;
+  padding: 0.5em 1em;
 }
 
 .poem-entry.active, .poem-entry:hover {
