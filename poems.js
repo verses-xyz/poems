@@ -1,6 +1,6 @@
 const poems = [
   {
-    title: "the world is a sacret object",
+    title: "the world is a sacred object",
     author: "kelsey chen",
     content: `- the world
     - all of it
