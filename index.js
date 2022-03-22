@@ -19,7 +19,7 @@ poems.forEach((poem, i) => {
     htmlContainerTag: "div",
     specialCharacters: {
       "^> (.*)$": (lineText) => {
-        const el = document.createElement("blockquote");
+const el = document.createElement("blockquote");
         const span = document.createElement("span");
         span.appendChild(document.createTextNode(lineText));
         el.appendChild(span);

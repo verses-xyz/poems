@@ -98,6 +98,10 @@ body {
   color: #15120C;
 }
 
+#sidebar > h1 {
+  margin-bottom: 0;
+}
+
 #sidebar > ul {
   list-style-type: none;
   padding-left: 0;
