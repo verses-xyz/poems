@@ -330,4 +330,18 @@ const poems = [
            - abstraction
              - erasure`,
   },
+{"title":`vibing`,
+"author":`grin`,
+"content":`
+- vibing is
+- authentic
+ - being present
+   - the opposite of self-conscious
+     - responding to what's alive for you right now
+       - the way kids are with each other
+         - when
+         - we interact non-symbolically
+           - our frequencies resonate
+             - when the shapes and colors inside me come out to play with the shapes and colors inside you`
+}
 ];
