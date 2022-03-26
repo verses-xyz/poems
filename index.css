@@ -90,6 +90,7 @@ body {
   .poem.poem {
     width: 60vw;
     left: 20vw;
+    padding: 6em 0;
   }
 }
 
