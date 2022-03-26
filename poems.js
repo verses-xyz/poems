@@ -1,8 +1,9 @@
 const poems = [
   {
-    title: "the world is a sacred object",
-    author: "kelsey chen",
-    content: `- the world
+    title: `the world is a sacred object`,
+    author: `kelsey chen`,
+    content: `
+- the world
     - all of it
         - all that
         - is
@@ -39,9 +40,10 @@ const poems = [
                                                         - is to lose yourself.`,
   },
   {
-    title: "peach pits",
-    author: "kelsey chen",
-    content: `- There is
+    title: `peach pits`,
+    author: `kelsey chen`,
+    content: `
+- There is
 - a peach tree
 - outside
 - my window
@@ -111,8 +113,8 @@ const poems = [
     - rolling across that runway.`,
   },
   {
-    title: "boundless shapeshifters",
-    author: "spencer chang",
+    title: `boundless shapeshifters`,
+    author: `spencer chang`,
     content: `
 * Texts
     * Melodies
@@ -143,8 +145,8 @@ const poems = [
         * holders of space and keepers of time and protectors of life`,
   },
   {
-    title: "knowing",
-    author: "jacky zhao",
+    title: `knowing`,
+    author: `jacky zhao`,
     content: `
 - They
   - The man at the bookstore
@@ -278,13 +280,13 @@ const poems = [
           - I chose to believe that yesterday I had met some reincarnation of my father.
             - I chose to believe that yesterday was the day I stopped
             - hating the desert for its dryness and instead admired it for its ability to hold wells.
-  - It was a sunny day after all.
-    `,
+  - It was a sunny day after all.`,
   },
   {
-    title: "death",
-    author: "andy tudhope",
-    content: `- death
+    title: `death`,
+    author: `andy tudhope`,
+    content: `
+- death
   - to end
     - returning
 - is
@@ -318,9 +320,10 @@ const poems = [
       - free.`,
   },
   {
-    title: "grasp",
-    author: "jw",
-    content: `- to 
+    title: `grasp`,
+    author: `jw`,
+    content: `
+- to 
 - be a subject
   - be a patient
      - objectify
@@ -330,9 +333,10 @@ const poems = [
            - abstraction
              - erasure`,
   },
-{"title":`vibing`,
-"author":`grin`,
-"content":`
+  {
+    title: `vibing`,
+    author: `grin`,
+    content: `
 - vibing is
 - authentic
  - being present
@@ -342,6 +346,44 @@ const poems = [
          - when
          - we interact non-symbolically
            - our frequencies resonate
-             - when the shapes and colors inside me come out to play with the shapes and colors inside you`
-}
+             - when the shapes and colors inside me come out to play with the shapes and colors inside you`,
+  },
+  {
+    title: `silence is golden`,
+    author: `heenal rajani`,
+    content: `
+- silence is
+- golden
+ - privilege
+  - violence
+   - the absence of violence
+    - the space between
+    - heartbeats
+     - cries
+      - the bombs that boom like enormous drums.
+       - the bombs that boom like enormous drums.
+       - white world watches;
+       - it's people like
+        - this could be
+         - it's not because of
+       - us.
+       - a minute's silence.
+        - silence is not an option.
+        - giggling teens with rifles over their shoulders.
+         - mangled torsos and babies being born.
+          - business as usual and utter despair;
+          - war is war.
+           - war is war, but no one has cancelled the planting season.
+           - sunflowers
+            - golden fields
+             - bleeding basket of bread
+              - bleeding basket of bread,
+              - washed down with molotov cocktails.
+               - washed down with molotov cocktails
+               - and silence.
+                - and silence.
+                - silence is hope
+                 - silence is hope.
+                 - hope springs eternal.`,
+  },
 ];
