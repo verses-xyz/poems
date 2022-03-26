@@ -6,10 +6,7 @@ poems.forEach((poem, i) => {
   entry.classList.add(`${i}`, "selectable", "poem-entry")
   const title = document.createElement("h3");
   title.innerText = poem.title;
-  const attr = document.createElement("p");
-  attr.innerText = poem.author;
   entry.appendChild(title);
-  entry.appendChild(attr);
   sidebar.appendChild(entry);
 
   entry.addEventListener("click", () => {

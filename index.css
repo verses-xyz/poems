@@ -135,6 +135,7 @@ h1 {
   width: 70px;
   height: 70px;
   opacity: 1;
+  margin: 1em 0;
 }
 
 ul#poem-list {

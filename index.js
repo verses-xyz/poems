@@ -44,10 +44,7 @@ const el = document.createElement("blockquote");
   entry.classList.add(`${i}`, "selectable", "poem-entry")
   const title = document.createElement("h3");
   title.innerText = poem.title;
-  const attr = document.createElement("p");
-  attr.innerText = poem.author;
   entry.appendChild(title);
-  entry.appendChild(attr);
   sidebar.appendChild(entry);
 
   if (i === parseInt(location.hash.substring(1))) {
@@ -66,6 +63,9 @@ const el = document.createElement("blockquote");
     poemDiv.classList.add("active");
     entry.classList.add("active");
     location.hash = i;
+
+    // scroll to top
+    window.scrollTo(0, 0);
   });
 
   poemContainer.appendChild(poemDiv);

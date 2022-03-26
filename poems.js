@@ -148,7 +148,7 @@ const poems = [
     title: `knowing`,
     author: `jacky zhao`,
     content: `
-- They
+- The man
   - The man at the bookstore
     - I went to the
     - bookstore
