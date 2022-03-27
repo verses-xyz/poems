@@ -29,10 +29,17 @@ const about = `
 	* the <a href="https://verses.xyz">verses</a> collective
 		* artists, researchers, and technologists of <a href="https://verses.xyz">verses</a>
 			* friends who vibe together in <a href="https://verses.xyz">verses</a>
-* because we wanted to explore mediums of 
+* because 
+* we wanted to explore mediums of 
+  * we were curious about
+    * we were nerd-sniped by
+      * we like to
 * software poetry.
   * software poetry and dynamic art.
     * software poetry and dynamic art and beautiful technology.
+      * poems and art and technology and what they look like together.
+        * creating beautiful technology.
+          * building cool things with fun people :)
 * <br/>
 * <br/>
 * <p>It&#39;s built on top of an open-source <a href="github.com/jackyzha0/telescopic-text/">library for creating transforming text</a>, text that changes, morphs, evolves. With all the new capabilities and mechanics that technology has given us, we still overwhelmingly see it used for utility and functional value. This library was originally inspired by the work done around <a href="https://www.telescopictext.org/">telescopic text</a>, text that expands and collapses. This work was done for a very functional reason, allowing writers to display a high-level summary for more context that dynamically appears as the user desires, a form of in-line footnotes. </p>
