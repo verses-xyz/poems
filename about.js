@@ -30,10 +30,10 @@ const about = `
 		* artists, researchers, and technologists of <a href="https://verses.xyz">verses</a>
 			* friends who vibe together in <a href="https://verses.xyz">verses</a>
 * because 
-* we wanted to explore mediums of 
+* we wanted to explore mediums for
   * we were curious about
     * we were nerd-sniped by
-      * we like to
+      * we like
 * software poetry.
   * software poetry and dynamic art.
     * software poetry and dynamic art and beautiful technology.
