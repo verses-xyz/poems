@@ -349,7 +349,7 @@ const poems = [
              - when the shapes and colors inside me come out to play with the shapes and colors inside you`,
   },
   {
-    title: `silence is golden`,
+    title: `silence`,
     author: `heenal rajani`,
     content: `
 - silence is
