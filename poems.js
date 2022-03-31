@@ -386,4 +386,19 @@ const poems = [
                  - silence is hope.
                  - hope springs eternal.`,
   },
+  {
+    title: `oscillations`,
+    author: `matthew siu`,
+    content: `
+- oscillations
+ - laughter and sadness
+  - laughter and sadness.
+  - success and failure
+   - success and failure.
+   - peace and crisis
+- each cycle a
+- journey.
+ - trial.
+  - transformation.`,
+  },
 ];
