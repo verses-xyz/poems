@@ -349,7 +349,7 @@ const poems = [
              - when the shapes and colors inside me come out to play with the shapes and colors inside you`,
   },
   {
-    title: `silence is golden`,
+    title: `silence`,
     author: `heenal rajani`,
     content: `
 - silence is
@@ -385,5 +385,20 @@ const poems = [
                 - silence is hope
                  - silence is hope.
                  - hope springs eternal.`,
+  },
+  {
+    title: `oscillations`,
+    author: `matthew siu`,
+    content: `
+- oscillations
+ - laughter and sadness
+  - laughter and sadness.
+  - success and failure
+   - success and failure.
+   - peace and crisis
+- each cycle a
+- journey.
+ - trial.
+  - transformation.`,
   },
 ];
