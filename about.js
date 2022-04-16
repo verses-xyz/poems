@@ -39,7 +39,7 @@ const about = `
           * creating beautiful things with beautiful people :)
 * <br/>
 * <br/>
-* <p>These poems&#39;s are written with an open-source <a href="github.com/jackyzha0/telescopic-text/">library for representing text</a> that</p>
+* <p>These poems&#39;s are written with an open-source <a href="https://github.com/jackyzha0/telescopic-text/">library for representing text</a> that</p>
 * <p>changes, morphs, and evolves with the attention of the reader.</p>
 * <p>changes, morphs, and evolves with the attention of the reader. This library was originally inspired by the work done around <a href="https://www.telescopictext.org/">telescopic text</a>, text that expands and collapses. This work was done for a very functional reason, allowing writers to display a high-level summary for more context that dynamically appears as the user desires, a form of in-line footnotes.</p>
 * <br/>
