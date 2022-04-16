@@ -16,42 +16,44 @@ poems.forEach((poem, i) => {
 
 const poemContainer = document.getElementById("about-poem");
 const about = `
-* This website is a gallery of 
-* shapeshifting 
-	* transforming
-		* morphing
-			* evolving
-* verses (poems, stories, letters, etc.), that play with creating a 
-* <a href="https://pluriverse.world/">pluriverse</a> of worlds
-	* pluriverse, explicitly <i>not</i> a multiverse, of worlds
-* within a single textual artifact, created and curated by 
+* This is a living library of
+* shapeshifting
+* transforming
+  * morphing
+    * evolving
+* verses., created by
 * the <a href="https://verses.xyz">verses community</a>
-	* the <a href="https://verses.xyz">verses</a> collective
-		* artists, researchers, and technologists of <a href="https://verses.xyz">verses</a>
-			* friends who vibe together in <a href="https://verses.xyz">verses</a>
-* because 
+  * the <a href="https://verses.xyz">verses collective</a>
+    * artists, researchers, and technologists of <a href="https://verses.xyz">verses</a>
+      * friends who co-exist and co-create together in <a href="https://verses.xyz">verses</a>
+* because
 * we wanted to explore mediums for
-  * we were curious about
-    * we were nerd-sniped by
-      * we like
+ * we were curious about
+   * we were nerd-sniped by
+     * we like
 * software poetry.
-  * software poetry and dynamic art.
-    * software poetry and dynamic art and beautiful technology.
-      * poems and art and technology and what they look like together.
+  * software that allows for different kinds of poetry.
+    * software that enables different kinds of beauty.
+      * poems and art and technology and different combinations thereof.
         * creating beautiful technology.
-          * building cool things with fun people :)
+          * creating beautiful things with beautiful people :)
 * <br/>
 * <br/>
-* <p>It&#39;s built on top of an open-source <a href="github.com/jackyzha0/telescopic-text/">library for creating transforming text</a>, text that changes, morphs, evolves. With all the new capabilities and mechanics that technology has given us, we still overwhelmingly see it used for utility and functional value. This library was originally inspired by the work done around <a href="https://www.telescopictext.org/">telescopic text</a>, text that expands and collapses. This work was done for a very functional reason, allowing writers to display a high-level summary for more context that dynamically appears as the user desires, a form of in-line footnotes. </p>
+* <p>These poems&#39;s are written with an open-source <a href="github.com/jackyzha0/telescopic-text/'' > library for representing text</a> that</p>
+* <p>changes, morphs, and evolves with the attention of the reader.</p>
+* <p>changes, morphs, and evolves with the attention of the reader. This library was originally inspired by the work done around <a href="https://www.telescopictext.org/">telescopic text</a>, text that expands and collapses. This work was done for a very functional reason, allowing writers to display a high-level summary for more context that dynamically appears as the user desires, a form of in-line footnotes. </p>
 * <br/>
 * <br/>
-* <p>But what about text that changes for the sole purpose of changing? How does meaning shift as the text changes and how can the reader create their own meaning as they explore these crevices in the textual landscape?</p>
+* <p>But what about text that changes for the sole purpose of changing, or for purely poetic reasons?</p>
+  * <p>How does meaning shift as the text changes with engagement?</p>
+    * <p>How can the reader create, and choose, their own meaning as they explore in the textual landscape?</p>
+      * <p>Most interestingly, how would this new affordance shape what kinds of verses people feel moved to, and able to, write? </p>
 * <br/>
 * <br/>
-* <p>With this gallery, we wanted to highlight the dynamic capabilities of software that are hard to replicate in a physical medium for creating stories and poems and literary art. </p>
+* <p>With this experiment, we wanted to explore the uniquely dynamic capability of software, which are hard to replicate in a printed, linear medium, for writing.</p>
 * <br/>
 * <br/>
-* <p>If you&#39;re interested in creating your own, we&#39;ve provided a <a href="https://poems.verses.xyz/test">test bed</a> that leverages normal text editing to create interactive, shapeshifting texts. If you would like to submit your poem to the verses community, please let us know!</p>`;
+* <p>If you&#39;re interested in creating your own, we&#39;ve provided a <a href="https://poems.verses.xyz/test">test bed</a> that leverages normal text editing to create interactive, shapeshifting texts.`;
 
 poemContainer.appendChild(
   createTelescopicTextFromBulletedList(about, { textMode: TextMode.Html })
