@@ -66,7 +66,20 @@
         To play with how a telescopic poem might look and behave, enter your text below, and the output will auto-update on top. If you would like to add it to the collection, you can submit your finished poem to <a href="https://coda.io/form/Verses-Telescopic-Poem-Submission_dAfMm4cUAB8">this form</a>.
       </p>
       <div id="playground">
-        <textarea id="testInput" placeholder="- your&#10;- beautiful poem&#10;  -  very beautiful poem"></textarea>
+        <div class="playgroundInputs">
+          <div>
+            <label for="separatorInput">Separator (defaults to space)</label>
+            <input id="separatorInput" name="separatorInput" aria-label="separator"/>
+          </div>
+          <div>
+            <label for="textModeInput">Text Mode</label>
+            <select id="textModeInput" name="textModeInput" aria-label="textMode" value="text">
+              <option value="text">Text</option>
+              <option value="html">Html</option>
+            </select>
+          </div>
+          <textarea id="testInput" placeholder="- your&#10;- beautiful poem&#10;  -  very beautiful poem"></textarea>
+        </div>
         <div>
           <h2>Your Poem</h2>
             <div id="text-container-inner"></div>
@@ -128,7 +141,7 @@
       document.getElementById("example-poem").appendChild(testNode);
       function onUpdateTelescopicText() {
         const input = document.getElementById("testInput").value;
-        const node = createTelescopicTextFromBulletedList(input);
+        const node = createTelescopicTextFromBulletedList(input, {separator: document.getElementById("separatorInput").value || ' ', textMode: document.getElementById('textModeInput').value });
         const container = document.getElementById("text-container-inner");
         container.replaceChildren(node);
 
@@ -150,6 +163,8 @@
       document
         .getElementById("testInput")
         .setAttribute("oninput", "onUpdateTelescopicText()");
+      document.getElementById('separatorInput').setAttribute('onchange', 'onUpdateTelescopicText()');
+      document.getElementById('textModeInput').setAttribute('onchange', 'onUpdateTelescopicText()');
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/prism.min.js"></script>
   </div>
