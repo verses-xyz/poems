@@ -38,6 +38,7 @@ body {
   padding-top: 10vh;
   width: 40vw;
   font-size: 1rem;
+  line-height: 2rem;
 }
 
 #telescope#telescope hr.spacer {
@@ -192,6 +193,12 @@ ul#poem-list {
 pre {
   background: #dfe6ed;
   padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+}
+
+code {
+  background: #dfe6ed;
+  padding: 0 0.25rem;
   border-radius: 4px;
 }
 

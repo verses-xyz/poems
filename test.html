@@ -42,131 +42,184 @@
     <meta name="theme-color" content="#ffffff" />
 
     <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/themes/prism.min.css"
-/>
-    <link rel="stylesheet" type="text/css" href="./index.css"  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/themes/prism.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
   </head>
   <body>
-  <div class="noise-gradient"></div>
-  <div class="two-pane">
-    <div id="sidebar">
-      <a href="https://verses.xyz">
-        <img id="versesLogoImg" src="./logo.png" />
-      </a>
-      <p>A collection of telescopic verses from the <a href="https://verses.xyz/">verses</a> community.</p>
-      <ul id="poem-list">
-      </ul>
-      <p><a href="/">Back to collection.</a></p>
-    </div>
-    <div id="text-container" class="test">
-      <h1>Interactive Playground</h1>
-      <p>This is an interactive site to play with making telescopic text using the <a href="github.com/jackyzha0/telescopic-text">telescopic-text library</a> maintained by jacky, spencer, and other open-source contributors.</p>
-      <p>
-        To play with how a telescopic poem might look and behave, enter your text below, and the output will auto-update on top. If you would like to add it to the collection, you can submit your finished poem to <a href="https://coda.io/form/Verses-Telescopic-Poem-Submission_dAfMm4cUAB8">this form</a>.
-      </p>
-      <div id="playground">
-        <div class="playgroundInputs">
-          <div>
-            <label for="separatorInput">Separator (defaults to space)</label>
-            <input id="separatorInput" name="separatorInput" aria-label="separator"/>
-          </div>
-          <div>
-            <label for="textModeInput">Text Mode</label>
-            <select id="textModeInput" name="textModeInput" aria-label="textMode" value="text">
-              <option value="text">Text</option>
-              <option value="html">Html</option>
-            </select>
-          </div>
-          <textarea id="testInput" placeholder="- your&#10;- beautiful poem&#10;  -  very beautiful poem"></textarea>
-        </div>
-        <div>
-          <h2>Your Poem</h2>
-            <div id="text-container-inner"></div>
-        </div>
-      </div>
-
-      <br/>
-      <details>
-        <summary>
-          <b>How do I use this?</b>
-        </summary>
+    <div class="noise-gradient"></div>
+    <div class="two-pane">
+      <div id="sidebar">
+        <a href="https://verses.xyz">
+          <img id="versesLogoImg" src="./logo.png" />
+        </a>
         <p>
-          You can write telescopic text using your favorite note app / text editor
-          and a bullet list! Start with a single sentence like:
-          <br/>
-          <pre>- Texts are boundless shapeshifters</pre>
+          A collection of telescopic verses from the
+          <a href="https://verses.xyz/">verses</a> community.
         </p>
-        <p>At any point, you can break up the full sentence into separate lines. Bullets on the same indentation level are combined
-          into the same sentence, and any indented bullets will be used as an
-          expansion point for the parent bullet. At any point, you can break up
-          the full sentence into separate lines. Bullets at the same indentation
-          level. For example,<br/>
-          <pre>
-  - Texts
-    - Clear notes
-        - really clear notes
-    - and 
-  - are boundless shapeshifters.
-    - are limitless shapeshifters.</pre>
-          would become the following:
+        <ul id="poem-list"></ul>
+        <p><a href="/">Back to collection.</a></p>
+      </div>
+      <div id="text-container" class="test">
+        <h1>Interactive Playground</h1>
+        <p>
+          This is an interactive site to play with making telescopic text using
+          the
+          <a href="github.com/jackyzha0/telescopic-text"
+            >telescopic-text library</a
+          >
+          maintained by jacky, spencer, and other open-source contributors.
         </p>
-        <div id="example-poem"></div>
+        <p>
+          To play with how a telescopic poem might look and behave, enter your
+          text below, and the output will auto-update on top. If you would like
+          to add it to the collection, you can submit your finished poem to
+          <a
+            href="https://coda.io/form/Verses-Telescopic-Poem-Submission_dAfMm4cUAB8"
+            >this form</a
+          >.
+        </p>
+        <details>
+          <summary>
+            <b>How do I use this?</b>
+          </summary>
+          <p>
+            You can write transforming text using your favorite note app / text editor
+            and a bullet list (accepted bullet symbols are <code>-</code> and <code>*</code>)! Start with a single sentence like:
+            <br/>
+            <pre>- Texts are boundless shapeshifters</pre>
+          </p>
+          <p>At any point, you can break up the full sentence into separate lines. Bullets on the same indentation level are combined
+            into the same sentence, and any indented bullets will be used as an
+            expansion point for the parent bullet. At any point, you can break up
+            the full sentence into separate lines. Bullets at the same indentation
+            level. For example,<br/>
+            <pre>
+    - Texts
+      - Clear notes
+          - really clear notes
+      - and 
+    - are boundless shapeshifters.
+      - are limitless shapeshifters.</pre>
+            would become the following:
+          </p>
+          <div id="example-poem"></div>
+        </details>
         <hr/>
-      </details>
-      <details class="code-preview"><summary><b>Corresponding code</b></summary>
-        <p>The following code will render the above telescopic text if put in an HTML file.</p>
-        <div id="copy-code-container">
-          <pre id="copy-code-content" class="language-html">
-          </pre>
+        <div id="playground">
+          <div class="playgroundInputs">
+            <div>
+              <label for="separatorInput">Separator (defaults to space)</label>
+              <input
+                id="separatorInput"
+                name="separatorInput"
+                aria-label="separator"
+              />
+            </div>
+            <div>
+              <label for="textModeInput">Text Mode</label>
+              <select
+                id="textModeInput"
+                name="textModeInput"
+                aria-label="textMode"
+                value="text"
+              >
+                <option value="text">Text</option>
+                <option value="html">Html</option>
+              </select>
+            </div>
+            <textarea
+              id="testInput"
+              placeholder="- my&#10;- beautiful&#10;  - beautiful transforming&#10;    - beautiful transforming soulful&#10;- poem&#10;  - composition&#10;    - verses"
+            ></textarea>
+          </div>
+          <div>
+            <h2>Your Poem</h2>
+            <div id="text-container-inner"></div>
+          </div>
         </div>
-        <p>Remember that you need to import the library code in your head. The easiest way is to include the following snippet:</p>
-        <pre class="language-html">
+
+        <br />
+        <div class="code-preview">
+          <b>Corresponding code</b>
+          <p>
+            The following code will render the above transforming text if put in
+            an HTML file.
+          </p>
+          <div id="copy-code-container">
+            <pre id="copy-code-content" class="language-html"></pre>
+          </div>
+          <p>
+            Remember that you need to import the library code in your head. The
+            easiest way is to include the following snippet:
+          </p>
+          <pre class="language-html">
 <code class="language-html">&lt;head&gt;
   ...
   &lt;script src=&quot;https://unpkg.com/telescopic-text/lib/index.js&quot;&gt;&lt;/script&gt;
   &lt;link href=&quot;https://unpkg.com/telescopic-text/lib/index.css&quot; rel=&quot;stylesheet&quot;&gt;
 &lt;/head&gt;</code>
         </pre>
-      </details>
-    </div>
+        </div>
+      </div>
 
-    <script>
-      const testNode = createTelescopicTextFromBulletedList(`* Texts
+      <script>
+        const testNode = createTelescopicTextFromBulletedList(`* Texts
   * Clear notes
       * really clear notes
   * and sounds 
 * are boundless shapeshifters.
   * are limitless shapeshifters.`);
-      document.getElementById("example-poem").appendChild(testNode);
-      function onUpdateTelescopicText() {
-        const input = document.getElementById("testInput").value;
-        const node = createTelescopicTextFromBulletedList(input, {separator: document.getElementById("separatorInput").value || ' ', textMode: document.getElementById('textModeInput').value });
-        const container = document.getElementById("text-container-inner");
-        container.replaceChildren(node);
+        const placeholderInput = `- my
+- beautiful
+  - beautiful transforming
+    - beautiful transforming soulful
+- poem
+  - composition
+    - verses`;
+        document.getElementById("example-poem").appendChild(testNode);
+        function onUpdateTelescopicText() {
+          const input = document.getElementById("testInput").value || placeholderInput;
+          const separatorValue =
+            document.getElementById("separatorInput").value || " ";
+          const textModeValue = document.getElementById("textModeInput").value;
+          const config = { separator: separatorValue, textMode: textModeValue };
+          const stringConfig = `{separator: '${separatorValue}', textMode: '${textModeValue}'}`;
+          const node = createTelescopicTextFromBulletedList(input, config);
+          const container = document.getElementById("text-container-inner");
+          container.replaceChildren(node);
 
-        // update the code block
-        const codeBlock = document.getElementById('copy-code-content');
-        const codeToCopyTemplate = `<div id="telescopicPoem"><\/div>
+          // update the code block
+          const codeBlock = document.getElementById("copy-code-content");
+          const codeToCopyTemplate = `<div id="telescopicPoem"><\/div>
 <script>
-  const telescopicContent = createTelescopicTextFromBulletedList(\`${input}\`);
+  const telescopicContent = createTelescopicTextFromBulletedList(\`${input}\`, ${stringConfig});
   const container = document.getElementById("telescopicPoem");
   container.appendChild(telescopicContent);
 <\/script>`;
-        const codeBlockNode = document.createElement('code');
-        codeBlockNode.classList.add('language-html')
-        codeBlockNode.appendChild(document.createTextNode(codeToCopyTemplate));
-        codeBlock.replaceChildren(codeBlockNode);
-        Prism.highlightElement(codeBlockNode);
-      }
+          const codeBlockNode = document.createElement("code");
+          codeBlockNode.classList.add("language-html");
+          codeBlockNode.appendChild(
+            document.createTextNode(codeToCopyTemplate)
+          );
+          codeBlock.replaceChildren(codeBlockNode);
+          Prism.highlightElement(codeBlockNode);
+        }
 
-      document
-        .getElementById("testInput")
-        .setAttribute("oninput", "onUpdateTelescopicText()");
-      document.getElementById('separatorInput').setAttribute('onchange', 'onUpdateTelescopicText()');
-      document.getElementById('textModeInput').setAttribute('onchange', 'onUpdateTelescopicText()');
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/prism.min.js"></script>
-  </div>
- </body>
+        document
+          .getElementById("testInput")
+          .setAttribute("oninput", "onUpdateTelescopicText()");
+        document
+          .getElementById("separatorInput")
+          .setAttribute("onchange", "onUpdateTelescopicText()");
+        document
+          .getElementById("textModeInput")
+          .setAttribute("onchange", "onUpdateTelescopicText()");
+        // instantiate initial value with the placeholder.
+        onUpdateTelescopicText();
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/prism.min.js"></script>
+    </div>
+  </body>
 </html>
