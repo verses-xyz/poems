@@ -401,4 +401,18 @@ const poems = [
  - trial.
   - transformation.`,
   },
+  {
+    title: `the way`,
+    author: `aidan fitzsimons`,
+    content: `
+-the
+-way
+ -way the beginning
+  -way the beginning of creation
+   -way creation begins
+    -way creation begins in every moment and paths move
+     -way creation begins in every moment and paths move with momentum
+      -way water loves forward around rocks
+`,
+  },
 ];
