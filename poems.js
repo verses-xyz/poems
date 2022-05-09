@@ -1,8 +1,7 @@
 const poems = [
-  {
-    title: `the world is a sacred object`,
-    author: `kelsey chen`,
-    content: `
+	{"title":`the world is a sacred object`,
+"author":`kelsey chen`,
+"content":`
 - the world
     - all of it
         - all that
@@ -37,12 +36,11 @@ const poems = [
                                                             - to try and keep it
                                                                 - to try to grasp it
                                                     - is to lose it.
-                                                        - is to lose yourself.`,
-  },
-  {
-    title: `peach pits`,
-    author: `kelsey chen`,
-    content: `
+                                                        - is to lose yourself.`
+},
+	{"title":`peach pits`,
+"author":`kelsey chen`,
+"content":`
 - There is
 - a peach tree
 - outside
@@ -110,12 +108,11 @@ const poems = [
     - two peach pits
         - two peach pits--tiny spiked hearts in the cold--
 - rolling.
-    - rolling across that runway.`,
-  },
-  {
-    title: `boundless shapeshifters`,
-    author: `spencer chang`,
-    content: `
+    - rolling across that runway.`
+},
+	{"title":`boundless shapeshifters`,
+"author":`spencer chang`,
+"content":`
 * Texts
     * Melodies
         * clear notes
@@ -142,12 +139,11 @@ const poems = [
             * sacred (laden with gravitas, revered by followers, imparts visceral feeling)
 * holders of space
     * holders of space and keepers of time
-        * holders of space and keepers of time and protectors of life`,
-  },
-  {
-    title: `knowing`,
-    author: `jacky zhao`,
-    content: `
+        * holders of space and keepers of time and protectors of life`
+},
+	{"title":`knowing`,
+"author":`jacky zhao`,
+"content":`
 - The man
   - The man at the bookstore
     - I went to the
@@ -280,12 +276,11 @@ const poems = [
           - I chose to believe that yesterday I had met some reincarnation of my father.
             - I chose to believe that yesterday was the day I stopped
             - hating the desert for its dryness and instead admired it for its ability to hold wells.
-  - It was a sunny day after all.`,
-  },
-  {
-    title: `death`,
-    author: `andy tudhope`,
-    content: `
+  - It was a sunny day after all.`
+},
+	{"title":`death`,
+"author":`andy tudhope`,
+"content":`
 - death
   - to end
     - returning
@@ -317,12 +312,11 @@ const poems = [
 - everlasting.
   - full.
     - real.
-      - free.`,
-  },
-  {
-    title: `grasp`,
-    author: `jw`,
-    content: `
+      - free.`
+},
+	{"title":`grasp`,
+"author":`jw`,
+"content":`
 - to 
 - be a subject
   - be a patient
@@ -331,12 +325,11 @@ const poems = [
          - grasp
            - grasp is the precondition for 
            - abstraction
-             - erasure`,
-  },
-  {
-    title: `vibing`,
-    author: `grin`,
-    content: `
+             - erasure`
+},
+	{"title":`vibing`,
+"author":`grin`,
+"content":`
 - vibing is
 - authentic
  - being present
@@ -346,12 +339,11 @@ const poems = [
          - when
          - we interact non-symbolically
            - our frequencies resonate
-             - when the shapes and colors inside me come out to play with the shapes and colors inside you`,
-  },
-  {
-    title: `silence`,
-    author: `heenal rajani`,
-    content: `
+             - when the shapes and colors inside me come out to play with the shapes and colors inside you`
+},
+	{"title":`silence`,
+"author":`heenal rajani`,
+"content":`
 - silence is
 - golden
  - privilege
@@ -384,12 +376,11 @@ const poems = [
                 - and silence.
                 - silence is hope
                  - silence is hope.
-                 - hope springs eternal.`,
-  },
-  {
-    title: `oscillations`,
-    author: `matthew siu`,
-    content: `
+                 - hope springs eternal.`
+},
+	{"title":`oscillations`,
+"author":`matthew siu`,
+"content":`
 - oscillations
  - laughter and sadness
   - laughter and sadness.
@@ -399,12 +390,11 @@ const poems = [
 - each cycle a
 - journey.
  - trial.
-  - transformation.`,
-  },
-  {
-    title: `the way`,
-    author: `aidan fitzsimons`,
-    content: `
+  - transformation.`
+},
+	{"title":`the way`,
+"author":`aidan fitzsimons`,
+"content":`
 -the
 -way
  -way the beginning
@@ -413,6 +403,57 @@ const poems = [
     -way creation begins in every moment and paths move
      -way creation begins in every moment and paths move with momentum
       -way water loves forward around rocks
-`,
-  },
+`
+},
+	{"title":`Towards a New Internet`,
+"author":`zach brown`,
+"content":`
+- Towards
+ - Building for
+  - Stories to inspire
+   - Believing in 
+- a New Internet.
+ - community gardens over walled gardens.
+  - online homes to seed and water without fear of being rugged, again.
+   - interoperable and regenerative technology stacks.
+    - more humane, de-faang-ed digital platforms.
+     - money legos and media legos at our fingertips.
+      - an exit from the panopticon of the Nudging State.
+       - a Decentralized Web.`
+},
+	{"title":`sacred codes`,
+"author":`sixian lim `,
+"content":`
+- a language 
+ - a language of texture
+
+- in a hard place 
+ - pressed into 
+
+ - a hard place
+  - a surface of delight, 
+
+ - close to
+
+ - the ground
+   - the patch of earth shrouded in shadow,
+    - the place where 
+
+    - fuzz lays claim
+     - threads of
+
+     - thought
+      - non-thought
+       - threads
+
+     - run their course 
+      - run
+       - run and yield, 
+
+       - gesturing 
+        - gesturing in
+        - code
+         - moss code.
+ `
+}
 ];
