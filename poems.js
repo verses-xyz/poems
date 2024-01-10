@@ -1,4 +1,4 @@
-const poems = [
+[
   {
     title: `the world is a sacred object`,
     author: `kelsey chen`,
@@ -459,5 +459,144 @@ const poems = [
         - code
          - moss code.
  `,
+  },
+  {
+    title: `[noun] is [adjective]`,
+    author: `ian (the writer)`,
+    content: `
+- eternal life
+ - each permutation
+  - heaven
+   - hell
+    - my soul
+     - form
+- is
+- now
+ - radiant
+  - dynamic
+   - aloof
+    - within reach
+     - undefined`,
+  },
+  {
+    title: `Growing Up`,
+    author: `Phil`,
+    content: `
+- Growing up
+ - Learning how to navigate life
+  - Becoming your own person
+- feels
+- impossible
+ - difficult
+  - like a struggle
+   - necessary
+    - possible
+     - like 
+     - a gift
+      - an act of radical kindness
+       - moving closer to
+       - reality
+        - truth
+         - love
+          - dancing
+           - grooving
+            - accepting 
+            - yourself
+             - yourself as you 
+             - are
+              - may be
+               - and have
+               - yet to still grow`,
+  },
+  {
+    title: `A Type of C-Y-O-A`,
+    author: `n0madz`,
+    content: `
+The wizard
+The witch
+The apprentice
+The knight
+- The failure
+The thief
+The assassin
+hears a knock at the door.
+Looking out the window,
+our protagonist
+our antagonist
+our villain
+our last hope
+- our fierce protector
+our shapeshifter
+sees
+storm clouds
+the tops of pitchforks
+a horde of daemons
+a carnival
+- a dark, impenetrable mist
+-quickly approaching from the ridge opposite. Muttering,
+“fuck this,”
+“hell yea,”
+“dammit, they found me,”
+he
+she
+they
+xe
+glanced at the pet
+dragon
+wolf
+owl
+black cat
+- bear
+that waited nearby, grabbed their cloak and
+staff
+sword
+wand
+bag of tricks
+- longbow
+-, and stormed out the backdoor without a single look back.
+`,
+  },
+  {
+    title: `word sculpture`,
+    author: `huggingpuppy`,
+    content: `
+My
+I craft my
+As the rain falls, I chisel my
+beautiful
+gold-tinted
+poem.
+word sculpture.
+`,
+  },
+  {
+    title: `on warmth`,
+    author: `raluca`,
+    content: `
+- in the midst of July
+- I'd still 
+- shut down.
+ - shut down or 
+ - shout out.
+
+- make no mistake
+- it's how I 
+- learnt to care.
+- plus,
+- there's a risk to unlearning:
+- uprooting.
+ - uprooting from an otherwise stable ground.
+
+- but 
+- maybe open wounds
+- heal better
+ - heal better or maybe not at all
+- and then I can 
+- be seen 
+ - be seen right through
+- or at least the pain
+- will soften. 
+ - will soften my voice.
+`,
   },
 ];
