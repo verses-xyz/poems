@@ -67,9 +67,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 3em 0 7em;
+  padding: 1em 3em 1em 7em;
   width: 15vw;
-  height: 100vh;
+  height: 98vh;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -154,6 +154,10 @@ h1 {
   image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor;
   /* IE (non-standard property) */
+}
+
+#poem-list {
+  overflow-y: auto;
 }
 
 ul#poem-list {
